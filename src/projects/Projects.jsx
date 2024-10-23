@@ -7,6 +7,7 @@ function Projects()
 {
     const imageUrls=[image1,image2,image3];
     const titles=["Retro Game", "Ping Pong", "Various Visualizations"]
+    const projectUrls=["https://github.com/sebe324/retro-game","https://github.com/sebe324/pingpong","https://github.com/sebe324/Various-Visualizations"]
     const [imageIndex, setImageIndex] = useState(0)
 
     function goLeft()
@@ -30,7 +31,7 @@ function Projects()
             <br></br>
             <div className='slider' href="google.com">
             <div className='arrow-box left noSelect' onClick={goLeft}>&lt;</div>
-            <a href="https://www.google.com" target="_blank">
+            <a href={projectUrls[imageIndex]} target="_blank">
             <img src={imageUrls[imageIndex]}></img>
             </a>
             <div className='arrow-box right noSelect' onClick={goRight}>&gt;</div>
