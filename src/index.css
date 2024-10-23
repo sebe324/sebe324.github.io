@@ -1,0 +1,133 @@
+html, body
+{
+    margin:0;
+    padding:0;
+    font-family: verdana;
+    background-color: #ecf0f1;
+    scroll-padding-top: 7rem;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+.topbar
+{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding:10px;
+    position: sticky;
+    top: 0;
+    background-color: #ecf0f1;
+    z-index:99;
+}
+
+.topbar a
+{
+    color:#404040;
+    text-decoration:none;
+    transition: all 0.25s ease;
+    position: relative;
+    padding:16px;
+    display:inline-block;
+  
+}
+
+.topbar a:hover
+{
+    color:#303030;
+    background-color: rgba(0,0,0,0.1);
+}
+.topbar a:hover::before
+{
+
+    width:100%;
+    background-color: #303030;
+
+}
+.topbar a::before
+{
+    content:'';
+    width:0px;
+    height:3px;
+    background-color: #aaaaaa;
+    position: absolute;
+    display:inline-block;
+	left: 0;
+	bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.topbar button
+{
+    float:right;
+    border:none;
+}
+
+section p
+{
+    color:#202020;
+}
+.grayout-small
+{
+    color:#404040;
+}
+main
+{
+    max-width: 700px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+.expandable
+{
+    margin-left:auto;
+    margin-right:auto;
+    font-size: xx-large;
+    text-align: center;
+    padding:10px;
+    width:fit-content;
+    transition: rotate 0.25s 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    color:#404040;
+}
+
+.expandable:hover
+{
+    color:#808080;
+    transform:translateY(-10px);  
+}
+
+.test
+{
+    font-size:0;
+    opacity:0;
+    transition:all 0.25s ease;
+}
+
+.test2
+{
+    opacity:1;
+    font-size:medium;
+} 
+
+.expandable-rotate
+{
+    rotate:180deg;
+}
+
